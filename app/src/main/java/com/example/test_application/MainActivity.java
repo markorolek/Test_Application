@@ -13,12 +13,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        list = findViewById(R.id.tv_list);
-        String[] names = {"Java", "Python", "C++", "Matlab", "Go", "C", "Swift", "JavaScript", "Ruby", "PHP", "Perl", "C#"};
-
-        list.setText("");
-        for(String name:names){
-            list.append(name + "\n");
-        }
     }
 }

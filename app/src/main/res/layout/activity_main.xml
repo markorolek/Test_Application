@@ -1,20 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
-    <ScrollView
+
+    <TextView
+        android:id="@+id/tv_print"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-        <TextView
-          android:id="@+id/tv_list"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/tv_text"
-          android:textSize="48dp"
-          android:textColor="@android:color/holo_orange_light"
-          android:padding="16dp" />
-    </ScrollView>
-  </FrameLayout>
+        android:layout_height="150dp"
+        android:hint="@string/tv_text"
+        android:textSize="48sp"
+        android:textAlignment="viewEnd"
+        android:textDirection="rtl"
+        android:textColor="@android:color/holo_orange_light"
+        android:gravity="end"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:text="AC" />
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:text="," />
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:text="%" />
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:text="+" />
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:text="1" />
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:text="2" />
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:text="3" />
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:text="-" />
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:text="4" />
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:text="5" />
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:text="6" />
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:text="x" />
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:text="7" />
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:text="8" />
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:text="9" />
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:text="/" />
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:text="0" />
+
+        <Button
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnSpan="3"
+            android:text="=" />
+    </GridLayout>
+  </LinearLayout>
