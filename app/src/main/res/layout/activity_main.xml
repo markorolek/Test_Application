@@ -14,7 +14,7 @@
         android:hint="@string/tv_text"
         android:textSize="48sp"
         android:textAlignment="viewEnd"
-        android:textDirection="rtl"
+        android:textDirection="ltr"
         android:textColor="@android:color/holo_orange_light"
         android:gravity="end"/>
 
@@ -29,103 +29,115 @@
             android:layout_width="103dp"
             android:layout_height="wrap_content"
             android:textSize="48sp"
-            android:text="AC" />
+            android:text="AC"
+            android:onClick="onNumberClick"/>
 
         <Button
             android:layout_width="103dp"
             android:layout_height="wrap_content"
             android:textSize="48sp"
-            android:text="," />
+            android:text="."
+            android:onClick="onNumberClick"/>
 
         <Button
             android:layout_width="103dp"
             android:layout_height="wrap_content"
             android:textSize="48sp"
-            android:text="%" />
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnSpan="2"
+            android:text="+"
+            android:onClick="onOperationClick"/>
 
         <Button
             android:layout_width="103dp"
             android:layout_height="wrap_content"
             android:textSize="48sp"
-            android:text="+" />
+            android:text="1"
+            android:onClick="onNumberClick"/>
 
         <Button
             android:layout_width="103dp"
             android:layout_height="wrap_content"
             android:textSize="48sp"
-            android:text="1" />
+            android:text="2"
+            android:onClick="onNumberClick"/>
 
         <Button
             android:layout_width="103dp"
             android:layout_height="wrap_content"
             android:textSize="48sp"
-            android:text="2" />
+            android:text="3"
+            android:onClick="onNumberClick"/>
 
         <Button
             android:layout_width="103dp"
             android:layout_height="wrap_content"
             android:textSize="48sp"
-            android:text="3" />
+            android:text="-"
+            android:onClick="onOperationClick"/>
 
         <Button
             android:layout_width="103dp"
             android:layout_height="wrap_content"
             android:textSize="48sp"
-            android:text="-" />
+            android:text="4"
+            android:onClick="onNumberClick"/>
 
         <Button
             android:layout_width="103dp"
             android:layout_height="wrap_content"
             android:textSize="48sp"
-            android:text="4" />
+            android:text="5"
+            android:onClick="onNumberClick"/>
 
         <Button
             android:layout_width="103dp"
             android:layout_height="wrap_content"
             android:textSize="48sp"
-            android:text="5" />
+            android:text="6"
+            android:onClick="onNumberClick"/>
 
         <Button
             android:layout_width="103dp"
             android:layout_height="wrap_content"
             android:textSize="48sp"
-            android:text="6" />
+            android:text="*"
+            android:onClick="onOperationClick"/>
 
         <Button
             android:layout_width="103dp"
             android:layout_height="wrap_content"
             android:textSize="48sp"
-            android:text="x" />
+            android:text="7"
+            android:onClick="onNumberClick"/>
 
         <Button
             android:layout_width="103dp"
             android:layout_height="wrap_content"
             android:textSize="48sp"
-            android:text="7" />
+            android:text="8"
+            android:onClick="onNumberClick"/>
 
         <Button
             android:layout_width="103dp"
             android:layout_height="wrap_content"
             android:textSize="48sp"
-            android:text="8" />
+            android:text="9"
+            android:onClick="onNumberClick"/>
 
         <Button
             android:layout_width="103dp"
             android:layout_height="wrap_content"
             android:textSize="48sp"
-            android:text="9" />
+            android:text="/"
+            android:onClick="onOperationClick"/>
 
         <Button
             android:layout_width="103dp"
             android:layout_height="wrap_content"
             android:textSize="48sp"
-            android:text="/" />
-
-        <Button
-            android:layout_width="103dp"
-            android:layout_height="wrap_content"
-            android:textSize="48sp"
-            android:text="0" />
+            android:text="0"
+            android:onClick="onNumberClick"/>
 
         <Button
             android:layout_width="103dp"
@@ -133,6 +145,7 @@
             android:textSize="48sp"
             android:layout_gravity="fill_horizontal"
             android:layout_columnSpan="3"
-            android:text="=" />
+            android:text="="
+            android:onClick="onOperationClick"/>
     </GridLayout>
   </LinearLayout>
